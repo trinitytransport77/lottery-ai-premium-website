@@ -50,11 +50,19 @@ body::before {
 }
 
 /* Main website layout */
+
 .site {
   width: 100%;
   max-width: 660px;
-  margin: auto;
+  margin: 130px auto 20px;
 }
+
+@media (max-width: 650px) {
+  .site {
+    margin: 45px auto 20px;
+  }
+}
+
 
 /* Header */
 header {
