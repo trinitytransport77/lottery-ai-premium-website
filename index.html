@@ -105,7 +105,172 @@ background-attachment: fixed;
       color: #a9bad5;
       font-size: 13px;
     }
-  </style>
+ 
+/* LOTTERY AI PREMIUM - COMPACT PROFESSIONAL DESIGN */
+
+body {
+  background-image: url("./lotterybg.png");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+/* Compact header with readable text */
+header {
+  max-width: 760px;
+  margin: 18px auto 12px;
+  padding: 18px 22px;
+  text-align: center;
+  background: rgba(3, 9, 31, 0.94);
+  border: 1px solid rgba(255, 215, 90, 0.65);
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.55);
+}
+
+header h1 {
+  font-size: clamp(26px, 4vw, 38px);
+  color: #fff;
+  text-shadow: 0 2px 6px #000;
+  margin: 0 0 9px;
+}
+
+header p {
+  font-size: 14px;
+  line-height: 1.5;
+  color: #f2f5ff;
+  margin: 5px 0;
+}
+
+/* Narrower main content */
+.container {
+  max-width: 920px;
+  margin: auto;
+  padding: 8px 16px 24px;
+}
+
+/* Section titles */
+.container h2 {
+  width: fit-content;
+  max-width: 100%;
+  margin: 20px auto 12px;
+  padding: 9px 22px;
+  background: rgba(3, 9, 31, 0.96);
+  border: 1px solid rgba(255, 215, 90, 0.6);
+  border-radius: 12px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Compact membership cards */
+.plans {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  justify-content: center;
+}
+
+.card {
+  padding: 16px 12px;
+  background: rgba(3, 10, 35, 0.95);
+  border: 1px solid rgba(255, 215, 90, 0.8);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 5px 16px rgba(0,0,0,0.55);
+  backdrop-filter: blur(5px);
+}
+
+.card h3 {
+  color: #fff;
+  font-size: 15px;
+  margin: 0 0 9px;
+  text-shadow: none;
+}
+
+.price {
+  color: #ffd65a;
+  font-size: 27px;
+  font-weight: bold;
+  margin: 9px 0;
+  text-shadow: 0 1px 3px #000;
+}
+
+.period {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.button {
+  margin-top: 12px;
+  padding: 9px 7px;
+  font-size: 12px;
+  border-radius: 7px;
+}
+
+/* Readable disclaimer */
+.notice {
+  max-width: 760px;
+  margin: 22px auto 10px;
+  padding: 15px 20px;
+  background: rgba(3, 9, 31, 0.96);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.25);
+  color: #f3f5ff;
+  font-size: 12px;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Readable copyright */
+footer {
+  width: fit-content;
+  max-width: calc(100% - 24px);
+  margin: 12px auto 20px;
+  padding: 10px 22px;
+  background: rgba(3, 9, 31, 0.96);
+  border-radius: 10px;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Mobile and tablet */
+@media (max-width: 650px) {
+  header {
+    margin: 10px 12px;
+    padding: 14px;
+  }
+
+  .plans {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .container h2 {
+    font-size: 17px;
+  }
+
+  .card {
+    padding: 13px 8px;
+  }
+
+  .card h3 {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 360px) {
+  .plans {
+    grid-template-columns: 1fr;
+  }
+}
+ </style>
 </head>
 <body>
 
