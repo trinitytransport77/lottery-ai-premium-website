@@ -191,6 +191,40 @@ footer {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+
+/* LOWER POSITION - NO ANIMATION */
+
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  background-attachment: fixed;
+  animation: none !important;
+}
+
+header {
+  margin-top: 190px !important;
+  animation: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+.container,
+.plans,
+.card,
+.notice,
+footer {
+  animation: none !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+@media (max-width: 650px) {
+  header {
+    margin-top: 90px !important;
+  }
+}
 </style>
 </head>
 <body>
